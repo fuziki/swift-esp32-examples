@@ -67,3 +67,19 @@ targets:
       HEADER_SEARCH_PATHS:
         - "$(inherited)"
         - "$(PROJECT_DIR)/headers/**"
+  # pwm-servo
+  ex03-pwm-servo:
+    type: framework
+    platform: macOS
+    sources:
+      - path: ex03-pwm-servo/main/
+        group: ex03-pwm-servo
+      - path: ex03-pwm-servo/
+        buildPhase: none
+        excludes:
+          - build/**
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: ex03-pwm-servo/main/BridgingHeader.h
+      HEADER_SEARCH_PATHS:
+        - "$(inherited)"
+        - "$(PROJECT_DIR)/headers/**"
