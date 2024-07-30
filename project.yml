@@ -1,0 +1,69 @@
+name: swift-esp32-examples
+
+settings:
+  OTHER_LDFLAGS:
+    - "-Wl,-undefined,dynamic_lookup"
+
+targets:
+  headers:
+    type: framework
+    platform: macOS
+    sources:
+      - path: headers
+        type: folder
+      - path: Makefile
+        type: file
+      - path: project.yml
+        type: file
+      - path: README.md
+        type: file
+      - path: LICENSE
+        type: file
+  # empty-template
+  ex00-empty-template:
+    type: framework
+    platform: macOS
+    sources:
+      - path: ex00-empty-template/main/
+        group: ex00-empty-template
+      - path: ex00-empty-template/
+        buildPhase: none
+        excludes:
+          - build/**
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: ex00-empty-template/main/BridgingHeader.h
+      HEADER_SEARCH_PATHS:
+        - "$(inherited)"
+        - "$(PROJECT_DIR)/headers/**"
+  # led-brink
+  ex01-led-brink:
+    type: framework
+    platform: macOS
+    sources:
+      - path: ex01-led-brink/main/
+        group: ex01-led-brink
+      - path: ex01-led-brink/
+        buildPhase: none
+        excludes:
+          - build/**
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: ex01-led-brink/main/BridgingHeader.h
+      HEADER_SEARCH_PATHS:
+        - "$(inherited)"
+        - "$(PROJECT_DIR)/headers/**"
+  # digital-io
+  ex02-digital-io:
+    type: framework
+    platform: macOS
+    sources:
+      - path: ex02-digital-io/main/
+        group: ex02-digital-io
+      - path: ex02-digital-io/
+        buildPhase: none
+        excludes:
+          - build/**
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: ex02-digital-io/main/BridgingHeader.h
+      HEADER_SEARCH_PATHS:
+        - "$(inherited)"
+        - "$(PROJECT_DIR)/headers/**"
