@@ -26,6 +26,13 @@
 #include <led_driver.h>
 #include <device.h>
 
+#include <driver/i2c_master.h>
+#include <esp_lcd_types.h>
+#include <esp_lcd_panel_vendor.h>
+#include <esp_lcd_panel_io.h>
+#include <esp_lcd_panel_ops.h>
+#include <esp_lvgl_port.h>
+
 // ESP Matter
 // ==========
 
@@ -37,6 +44,7 @@
 // turns out to not be the case when importing these headers in Swift. Let's manually declare strnlen as a workaround.
 //
 // connectedhomeip/src/credentials/FabricTable.h:82:69: error: use of undeclared identifier 'strnlen'
+
 #ifdef __cplusplus
 extern "C" {
 #endif

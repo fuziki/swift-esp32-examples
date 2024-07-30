@@ -83,3 +83,19 @@ targets:
       HEADER_SEARCH_PATHS:
         - "$(inherited)"
         - "$(PROJECT_DIR)/headers/**"
+  # i2c-lcd
+  ex04-i2c-lcd:
+    type: framework
+    platform: macOS
+    sources:
+      - path: ex04-i2c-lcd/main/
+        group: ex04-i2c-lcd
+      - path: ex04-i2c-lcd/
+        buildPhase: none
+        excludes:
+          - build/**
+    settings:
+      SWIFT_OBJC_BRIDGING_HEADER: ex04-i2c-lcd/main/BridgingHeader.h
+      HEADER_SEARCH_PATHS:
+        - "$(inherited)"
+        - "$(PROJECT_DIR)/headers/**"
