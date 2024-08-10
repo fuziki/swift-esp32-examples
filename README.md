@@ -1,6 +1,10 @@
 # Swift ESP32 Examples
 
-This repository provides a collection of examples for running Swift on the ESP32-C6 using Embedded Swift. The examples range from basic GPIO operations to controlling an LCD via I2C. 
+This repository provides a collection of examples for running Swift on the ESP32-C6 using Embedded Swift.  
+The examples range from basic GPIO operations to controlling an LCD via I2C.  
+This repository is based on and inspired by the examples from [Swift Matter Examples](https://github.com/apple/swift-matter-examples).  
+
+https://github.com/apple/swift-matter-examples
 
 ## Example Overview
 
@@ -12,7 +16,9 @@ This repository provides a collection of examples for running Swift on the ESP32
 
 ## Environment Setup
 
-To set up your environment and follow along with the examples, please refer to the official tutorial from Apple [here](https://apple.github.io/swift-matter-examples/tutorials/tutorial-table-of-contents).
+To set up your environment and follow along with the examples, please refer to the official tutorial from Apple [here](https://apple.github.io/swift-matter-examples/tutorials/tutorial-table-of-contents).  
+
+https://apple.github.io/swift-matter-examples/tutorials/tutorial-table-of-contents
 
 ## Installation
 
@@ -31,18 +37,20 @@ To set up your environment and follow along with the examples, please refer to t
    ```
 
 2. **Configure the Build System**  
-   Configure the build system for the ESP32-C6 microcontroller.
+   Configure the build system for the ESP32-C6 microcontroller.  
+   (Running . scripts/export.sh once after starting the terminal is sufficient.)
    ```bash
+   $ . scripts/export.sh
    $ idf.py set-target esp32c6
    ```
 
-3. **Build and Deploy**  
+4. **Build and Deploy**  
    Build the application and deploy it to your ESP32-C6 device.
    ```bash
    $ idf.py build flash monitor
    ```
 
-4. **Observe the Output**  
+5. **Observe the Output**  
    Once the deployment is complete, you should see the following log message on the device:
    ```text
    🏎️   Hello, Embedded Swift! (LED Blink)
