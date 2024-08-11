@@ -8,7 +8,7 @@ This example uses GPIO digital input and output functionality. When the button i
 
 ## Circuit Diagram
 
-![ex02-digital-io.png](../docs/ex02-digital-io.png)
+<img src="../docs/ex02-digital-io.png" width="640">
 
 ## Execution Steps
 
