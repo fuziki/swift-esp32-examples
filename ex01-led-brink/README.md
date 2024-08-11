@@ -1,29 +1,23 @@
-# Example 01: LED Brink
+# ex01-led-brink
 
-## Building and running the example
+## Overview
 
-For full steps how to build the example code, follow the [Setup Your Environment](https://apple.github.io/swift-embedded/swift-matter-examples/tutorials/tutorial-table-of-contents#setup-your-environment) tutorials and the "Build and Run" section of the [Explore the LED Blink example](https://apple.github.io/swift-matter-examples/tutorials/swiftmatterexamples/run-example-led-blink) tutorial. In summary:
+This is a copy of the [LED Blink](https://github.com/apple/swift-matter-examples/tree/main/led-blink) example from the swift-matter-examples repository.
 
-- Ensure your system has all the required software installed and your shell has access to the tools listed in the top-level README file.
-- Plug in the ESP32C6 development board via a USB cable.
+## Circuit Diagram
 
-1. Clone the repository and navigate to the `ex01-led-brink` example.
-  ```shell
-  $ git clone https://github.com/fuziki/swift-esp32-examples.git
-  $ cd swift-matter-examples/ex01-led-brink
-  ```
+No connections are required.
 
-2. Configure the build system for your microcontroller.
-  ```shell
-  $ idf.py set-target esp32c6
-  ```
+## Execution Steps
 
-3. Build and deploy the application to your device. 
-  ```shell
-  $ idf.py build flash monitor
-  ```
+1. Set the target to ESP32-C6:
+   ```bash
+   $ idf.py set-target esp32c6
+   ```
 
-4. Observe that in the device logs, the log message from Embedded Swift shows up:
-  ```shell
-  🏎️   Hello, Embedded Swift! (LED Blink)
-  ```
+2. Connect your ESP32 to the PC, build, and flash the application:
+   ```bash
+   $ idf.py build flash monitor
+   ```
+
+3. Observe that the LED on the ESP32-C6 DevKit blinks.
