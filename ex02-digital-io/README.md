@@ -1,29 +1,25 @@
-# Example 02: Digital IO
+# ex02-digital-io
 
-## Building and running the example
+## Overview
 
-For full steps how to build the example code, follow the [Setup Your Environment](https://apple.github.io/swift-embedded/swift-matter-examples/tutorials/tutorial-table-of-contents#setup-your-environment) tutorials and the "Build and Run" section of the [Explore the LED Blink example](https://apple.github.io/swift-matter-examples/tutorials/swiftmatterexamples/run-example-led-blink) tutorial. In summary:
+This example uses GPIO digital input and output functionality. When the button is pressed, the LED will blink 5 times.
 
-- Ensure your system has all the required software installed and your shell has access to the tools listed in the top-level README file.
-- Plug in the ESP32C6 development board via a USB cable.
+![ex02-digital-io.gif](../docs/ex02-digital-io.gif)
 
-1. Clone the repository and navigate to the `ex02-digital-io` example.
-  ```shell
-  $ git clone https://github.com/fuziki/swift-esp32-examples.git
-  $ cd swift-matter-examples/ex02-digital-io
-  ```
+## Circuit Diagram
 
-2. Configure the build system for your microcontroller.
-  ```shell
-  $ idf.py set-target esp32c6
-  ```
+![ex02-digital-io.png](../docs/ex02-digital-io.png)
 
-3. Build and deploy the application to your device. 
-  ```shell
-  $ idf.py build flash monitor
-  ```
+## Execution Steps
 
-4. Observe that in the device logs, the log message from Embedded Swift shows up:
-  ```shell
-  🏎️ Hello, Embedded Swift! (Digital IO)
-  ```
+1. Set the target to ESP32-C6:
+   ```bash
+   $ idf.py set-target esp32c6
+   ```
+
+2. Connect your ESP32 to the PC, build, and flash the application:
+   ```bash
+   $ idf.py build flash monitor
+   ```
+
+3. Press the button connected to GPIO22, and the LED connected to GPIO21 will blink.
