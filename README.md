@@ -14,6 +14,10 @@ https://github.com/apple/swift-matter-examples
 - **ex03-pwm-servo**: Controls a servo motor using PWM signals.
 - **ex04-i2c-lcd**: Operates an SSD1306-based I2C LCD, displaying information on the screen.
 
+| ex01-led-brink | ex02-digital-io | ex03-pwm-servo | ex04-i2c-lcd |
+| :-: | :-: | :-: | :-: |
+| ![ex01-led-brink](docs/ex01-led-brink.gif) | ![ex02-digital-io](docs/ex02-digital-io.gif) | ![ex03-pwm-servo](docs/ex03-pwm-servo.gif) | ![ex04-i2c-lcd](docs/ex04-i2c-lcd.gif) |
+
 ## Environment Setup
 
 To set up your environment and follow along with the examples, please refer to the official tutorial from Apple [here](https://apple.github.io/swift-matter-examples/tutorials/tutorial-table-of-contents).  
