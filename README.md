@@ -17,7 +17,7 @@ https://github.com/apple/swift-matter-examples
 | ex01-led-brink | ex02-digital-io | ex03-pwm-servo | ex04-i2c-lcd |
 | :-: | :-: | :-: | :-: |
 | ![ex01-led-brink](docs/ex01-led-brink.gif) | ![ex02-digital-io](docs/ex02-digital-io.gif) | ![ex03-pwm-servo](docs/ex03-pwm-servo.gif) | ![ex04-i2c-lcd](docs/ex04-i2c-lcd.gif) |
-| Circuit not required. | ![ex02-digital-io](docs/ex02-digital-io.png) | ![ex03-pwm-servo](docs/ex03-pwm-servo.png) | ![ex04-i2c-lcd](docs/ex04-i2c-lcd.png) |
+| Circuit not required. | <img src="docs/ex02-digital-io.png" width="640"> | <img src="docs/ex03-pwm-servo.png" width="640"> | <img src="docs/ex04-i2c-lcd.png" width="640"> |
 
 Image created using Wokwi.
 
