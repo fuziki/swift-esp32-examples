@@ -4,6 +4,8 @@
 
 This is a copy of the [LED Blink](https://github.com/apple/swift-matter-examples/tree/main/led-blink) example from the swift-matter-examples repository.
 
+![ex01-led-brink.gif](../docs/ex01-led-brink.gif)
+
 ## Circuit Diagram
 
 No connections are required.
